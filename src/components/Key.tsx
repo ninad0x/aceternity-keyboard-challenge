@@ -22,6 +22,7 @@ export const Key = ({primary, secondary, type, width, isPressed, keyBorder}: Key
     console.log("border --", keyBorder);
     
     return <button
+    onClick={(e) => e.currentTarget.blur()}
     style={{
         borderColor: isPressed ? keyBorder : '',
         boxShadow: isPressed ? `0 0 10px ${keyBorder}, 0 0 20px ${keyBorder}40`: ''
