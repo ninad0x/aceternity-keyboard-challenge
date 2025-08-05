@@ -5,9 +5,11 @@ interface KeyProps {
     secondary?: string;
     width?: string;
     height?: string;
+    isPressed: boolean;
+    keyBorder: string
 }
 
-const defaultKeyStyle = "text-sm bg-black shadow-white shadow-lg cursor-pointer hover:scale-[0.95] hover:shadow-none hover:text-xs text-white flex items-center justify-center "
+const defaultKeyStyle = " text-sm bg-[#0A090F] shadow-md cursor-pointer hover:scale-[0.98] hover:shadow-none hover:text-[13.5px]  text-white flex items-center justify-center "
 
 
 const buttonTypes = {
@@ -16,13 +18,21 @@ const buttonTypes = {
 }
 
 
-export const Key = ({primary, secondary, type, width}: KeyProps) => {
+export const Key = ({primary, secondary, type, width, isPressed, keyBorder}: KeyProps) => {
+    console.log("border --", keyBorder);
+    
     return <button
-    className={`
+    style={{
+        borderColor: isPressed ? keyBorder : '',
+        boxShadow: isPressed ? `0 0 10px ${keyBorder}, 0 0 20px ${keyBorder}40`: ''
+    }}
+    className={`border-[0.5px] border-gray-600
+        transition-transform duration-100
         ${defaultKeyStyle}
         ${type}
         ${buttonTypes[type]}
         ${width ?? "w-15 "}
+        ${isPressed ? `border-[4px] -translate-y-1 shadow-lg` : `shadow-white`}
     `}>
         {secondary}
         {secondary && <br />}
