@@ -1,6 +1,6 @@
 export const keys = [
   [
-    { primary: "Esc", width: "w-23", dataKey: "Escape" },
+    { primary: "esc", width: "w-18", dataKey: "Escape" },
     { primary: "F1", secondary: "🔅︎", dataKey: "F1" },
     { primary: "F2", secondary: "🔆︎", dataKey: "F2" },
     { primary: "F3", secondary: "🔉︎", dataKey: "F3" },
@@ -29,10 +29,10 @@ export const keys = [
     { primary: "0", secondary: ")", dataKey: "0" },
     { primary: "-", secondary: "_", dataKey: "-" },
     { primary: "=", secondary: "+", dataKey: "=" },
-    { primary: "Delete", width: "w-23", dataKey: "Backspace" }
+    { primary: "delete", width: "w-18", dataKey: "Backspace" }
   ],
   [
-    { primary: "Tab", width: "w-23", dataKey: "Tab" },
+    { primary: "tab", width: "w-18", dataKey: "tab" },
     { primary: "Q", dataKey: "q" },
     { primary: "W", dataKey: "w" },
     { primary: "E", dataKey: "e" },
@@ -48,7 +48,7 @@ export const keys = [
     { primary: "\\", secondary: "|", dataKey: "\\" }
   ],
   [
-    { primary: "Caps Lock", width: "w-26", dataKey: "CapsLock" },
+    { primary: "caps lock", width: "w-22", dataKey: "CapsLock" },
     { primary: "A", dataKey: "a" },
     { primary: "S", dataKey: "s" },
     { primary: "D", dataKey: "d" },
@@ -60,10 +60,10 @@ export const keys = [
     { primary: "L", dataKey: "l" },
     { primary: ";", secondary: ":", dataKey: ";" },
     { primary: "'", secondary: "\"", dataKey: "'" },
-    { primary: "Return", width: "w-28", dataKey: "Enter" }
+    { primary: "return", width: "w-23", dataKey: "Enter" }
   ],
   [
-    { primary: "Shift", width: "w-35", dataKey: "Shift" },
+    { primary: "shift", width: "w-29.5", dataKey: "Shift" },
     { primary: "Z", dataKey: "z" },
     { primary: "X", dataKey: "x" },
     { primary: "C", dataKey: "c" },
@@ -74,16 +74,17 @@ export const keys = [
     { primary: ",", secondary: "<", dataKey: "," },
     { primary: ".", secondary: ">", dataKey: "." },
     { primary: "/", secondary: "?", dataKey: "/" },
-    { primary: "Shift", width: "w-35", dataKey: "Shift" }
+    { primary: "shift", width: "w-29.5", dataKey: "Shift" }
   ],
   [
     { primary: "fn", secondary: "🌐︎", dataKey: "Fn" },
-    { primary: "Control", secondary: "⌃", dataKey: "Control" },
-    { primary: "Option", secondary: "⌥", dataKey: "Alt" },
-    { primary: "cmd", secondary: "⌘", width: "w-19", dataKey: "Meta" },
-    { primary: "", width: "w-79", dataKey: " " },
-    { primary: "cmd", secondary: "⌘", dataKey: "Meta" },
-    { primary: "Option", secondary: "⌥", dataKey: "Alt" }
+    { primary: "control", secondary: "⌃", width: "w-16", dataKey: "Control" },
+    { primary: "option", secondary: "⌥", width: "w-16", dataKey: "Alt" },
+    { primary: "cmd", secondary: "⌘", width: "w-17", dataKey: "Meta" },
+    { primary: "", width: "w-58", dataKey: " " },
+    { primary: "cmd", secondary: "⌘", width: "w-17", dataKey: "Meta" },
+    { primary: "option", secondary: "⌥", width: "w-16", dataKey: "Alt" },
+
   ]
 ];
 

@@ -37,10 +37,10 @@ export const KeyboardBody = ({dark, keyBorder}:bodyProps) => {
     }, [])
 
 
-    return <div className={`m-auto p-2 pb-3 min-w-236 max-w-236 h-auto rounded-xl shadow-xl flex flex-wrap transition-all duration-500
+    return <div className={`m-auto p-2 pb-3 min-w-[826px] w-[826px] h-auto rounded-xl shadow-xl flex flex-wrap transition-all duration-500
     ${dark 
-        ? 'bg-zinc-800 shadow-zinc-950/70 shadow-lg' 
-        : 'bg-slate-500 shadow-slate-600/70 shadow-lg'} `}>
+        ? 'bg-[#303033] shadow-lg shadow-black/70 ' 
+        : 'bg-slate-500 shadow-lg shadow-slate-600/70'} `}>
 
         {/* Normal Keys */}
         {keys.map(r => {
@@ -65,7 +65,7 @@ export const KeyboardBody = ({dark, keyBorder}:bodyProps) => {
                         {
                             x.primary === "empty"
                             ? <div></div>
-                            : <Key keyBorder={keyBorder} type="arrow" primary={x.primary} width="w-16" isPressed={isPressed} />
+                            : <Key keyBorder={keyBorder} type="arrow" primary={x.primary} width="w-12.5" isPressed={isPressed} />
                         }
                     </div>
                 })}

@@ -22,9 +22,8 @@ export default function App() {
     onMouseEnter={() => setNav(true)}
     onMouseLeave={() => setNav(false)}
 
-    className={`island fixed m-2 w-40 h-10 gap-10 rounded-2xl text-stone-100
-    cursor-pointer text-center flex items-center justify-center  shadow-md hover:shadow-xl border border-dashed  hover:w-80 hover:h-30 transition-all duration-500 ease-in-out p-4
-    ${darkMode ? `border-zinc-600 shadow-black/20` : `border-slate-500`} 
+    className={`island absolute m-2 w-40 h-10 gap-10 rounded-2xl cursor-pointer text-center flex items-center justify-center shadow-lg hover:shadow-xl border border-dashed  hover:w-80 hover:h-30 transition-all duration-500 ease-in-out p-4
+    ${darkMode ? `border-zinc-600 shadow-black/20 bg-[#070707]]` : `border-slate-500`} 
     `}>
 
       <button

@@ -9,17 +9,16 @@ interface KeyProps {
     keyBorder: string
 }
 
-const defaultKeyStyle = " text-sm bg-[#0A090F] shadow-md cursor-pointer hover:scale-[0.98] hover:shadow-none hover:text-[13.5px]  text-white flex items-center justify-center "
+const defaultKeyStyle = "text-[12px] text-zinc-300 bg-[#0A090D] cursor-pointer hover:scale-[0.98] hover:shadow-none hover:translate-y-px  flex items-center justify-center "
 
 
 const buttonTypes = {
-    "normal": "m-0.5 p-4 h-15 rounded-xl",
-    "arrow": "mx-0.5 h-7 rounded-[10px]"
+    "normal": "m-[2.2px] p-4 h-13 rounded-xl",
+    "arrow": "mx-0.5 h-6 rounded-[10px]"
 }
 
 
 export const Key = ({primary, secondary, type, width, isPressed, keyBorder}: KeyProps) => {
-    console.log("border --", keyBorder);
     
     return <button
     onClick={(e) => e.currentTarget.blur()}
@@ -27,13 +26,13 @@ export const Key = ({primary, secondary, type, width, isPressed, keyBorder}: Key
         borderColor: isPressed ? keyBorder : '',
         boxShadow: isPressed ? `0 0 10px ${keyBorder}, 0 0 20px ${keyBorder}40`: ''
     }}
-    className={`border-[0.5px] border-gray-600
+    className={`border border-gray-700 m-
         transition-transform duration-100
         ${defaultKeyStyle}
         ${type}
         ${buttonTypes[type]}
-        ${width ?? "w-15 "}
-        ${isPressed ? `border-[4px] -translate-y-1 shadow-lg` : `shadow-white`}
+        ${width ?? "w-13 "}
+        ${isPressed ? `border-[4px] -translate-y-1 shadow-lg` : `shadow-lg shadow-white/50  `}
     `}>
         {secondary}
         {secondary && <br />}
