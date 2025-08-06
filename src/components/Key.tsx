@@ -26,7 +26,7 @@ export const Key = ({primary, secondary, type, width, isPressed, keyBorder}: Key
         borderColor: isPressed ? keyBorder : '',
         boxShadow: isPressed ? `0 0 10px ${keyBorder}, 0 0 20px ${keyBorder}40`: ''
     }}
-    className={`border border-gray-700 m-
+    className={`border border-gray-500/50
         transition-transform duration-100
         ${defaultKeyStyle}
         ${type}
