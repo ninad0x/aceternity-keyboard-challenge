@@ -9,7 +9,7 @@ import Colorboard from "./components/Colorboard";
 
 export default function App() {
 
-  const [nav, setNav] = useState(true)
+  const [nav, setNav] = useState(false)
   const [darkMode, setDarkMode ] = useState(true)
   const [keyBorder, setKeyBorder] = useState('#fb5607')
 
